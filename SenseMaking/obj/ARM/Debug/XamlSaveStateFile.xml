@@ -1,0 +1,8 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <LocalAssembly PathName="c:\source\projects\recorder\sensemaking\obj\arm\debug\intermediatexaml\sensemaking.exe" HashGuid="057c8ed8-fbb2-d7ac-919c-de97962d98d1" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\microsoft.vclibs\12.0\references\commonconfiguration\neutral\platform.winmd" HashGuid="58b6b6d1-928e-9908-9804-eb460e5e101b" />
+    <ReferenceAssembly PathName="c:\source\repos\recorder\packages\lumiasensorcoresdktesting.0.9.1.3\lib\wpa81\arm\lumia.sense.testing.winmd" HashGuid="52ce628f-575d-a476-480b-2296ff43f449" />
+    <ReferenceAssembly PathName="c:\source\repos\recorder\packages\lumiasensorcoresdk.0.9.1.3\lib\wpa81\arm\lumia.sense.winmd" HashGuid="5ec34f4d-e9b9-707e-916b-dcd174d3cedb" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>

@@ -1,0 +1,58 @@
+﻿<Page
+    x:Class="SenseMaking.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SenseMaking"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#00ABA9">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Margin="24,17,0,28">
+            <TextBlock Text="SENSORCORE TOOL" Style="{ThemeResource TitleTextBlockStyle}" Typography.Capitals="SmallCaps" Foreground="White"/>
+            <TextBlock Text="recorder" Style="{ThemeResource HeaderTextBlockStyle}" Foreground="White"/>
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <TextBlock Text="Activity monitor" Style="{StaticResource TitleStyle}"/>
+            <Ellipse x:Name="ActivityMarker" Style="{StaticResource MarkerStyle}"/>
+            <TextBlock x:Name="ActivityClock" Style="{StaticResource ClockStyle}"/>
+            <Button x:Name="ActivityButton" Style="{StaticResource ButtonStyle}" Click="ActivityButton_Click"/>
+        </Grid>
+        <Grid Grid.Row="2">
+            <TextBlock Text="Places monitor" Style="{StaticResource TitleStyle}"/>
+            <Ellipse x:Name="PlacesMarker" Style="{StaticResource MarkerStyle}"/>
+            <TextBlock x:Name="PlaceClock" Style="{StaticResource ClockStyle}"/>
+            <Button x:Name="PlacesButton" Style="{StaticResource ButtonStyle}" Click="PlacesButton_Click"/>
+        </Grid>
+        <Grid Grid.Row="3">
+            <TextBlock Text="Step counter" Style="{StaticResource TitleStyle}"/>
+            <Ellipse x:Name="StepMarker" Style="{StaticResource MarkerStyle}"/>
+            <TextBlock x:Name="StepClock" Style="{StaticResource ClockStyle}"/>
+            <Button x:Name="StepsButton" Style="{StaticResource ButtonStyle}" Click="StepsButton_Click"/>
+        </Grid>
+        <Grid Grid.Row="4">
+            <TextBlock Text="Route tracker" Style="{StaticResource TitleStyle}"/>
+            <Ellipse x:Name="TrackPointMarker" Style="{StaticResource MarkerStyle}"/>
+            <TextBlock x:Name="TrackPointClock" Style="{StaticResource ClockStyle}"/>
+            <Button x:Name="TrackPointButton" Style="{StaticResource ButtonStyle}" Click="TrackPointButton_Click"/>
+        </Grid>
+    </Grid>
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.SecondaryCommands>
+                <AppBarButton x:Name="ResetButton" Label="reset all" Click="OnResetClicked"/>
+                <AppBarButton x:Name="HelpButton" Label="help..." Click="OnHelpClicked"/>
+                <AppBarButton x:Name="AboutButton" Label="about..." Click="OnAboutClicked"/>
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+</Page>

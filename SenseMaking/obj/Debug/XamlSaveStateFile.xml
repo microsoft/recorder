@@ -1,0 +1,7 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <LocalAssembly PathName="d:\data\my documents\visual studio 2013\projects\sensemaking\sensemaking\obj\debug\intermediatexaml\sensemaking.exe" HashGuid="01407d30-7a30-6846-bc7f-2e166432196d" />
+    <ReferenceAssembly PathName="c:\source\projects\recorder\packages\sensorcoresdktesting.1.0.2.15\lib\wpa81\x86\lumia.sense.testing.winmd" HashGuid="f73beade-741b-41d0-4a82-64db23eb7faa" />
+    <ReferenceAssembly PathName="c:\source\projects\recorder\packages\sensorcoresdk.1.0.0.104\lib\wpa81\x86\lumia.sense.winmd" HashGuid="d7803634-de32-79c0-445e-374924a5585f" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>
