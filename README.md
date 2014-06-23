@@ -67,7 +67,7 @@ file the capabilities required for it to work:
 --------------------------------------------------------------------------------
 
 See the license text file delivered with this project. The license file is also
-available online at https://github.com/nokia-developer/recorder/blob/master/Licence.txt
+available online at https://github.com/nokia-developer/recorder/blob/master/License.txt
 
 
 4. Version history
