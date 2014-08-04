@@ -37,7 +37,7 @@ namespace record
 
         private PlaceMonitor pMonitor;
         private StepCounter sCounter;
-        private RouteTracker rTracker;
+        private TrackPointMonitor rTracker;
         private ActivityMonitor aMonitor;
 
         // Constructor
@@ -227,7 +227,7 @@ namespace record
                             pMonitor = await PlaceMonitor.GetDefaultAsync();
                             break;
                         case SenseType.Route:
-                            rTracker = await RouteTracker.GetDefaultAsync();
+                            rTracker = await TrackPointMonitor.GetDefaultAsync();
                             break;
                         case SenseType.Steps:
                             sCounter = await StepCounter.GetDefaultAsync();
