@@ -61,7 +61,7 @@ namespace record.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This is a Nokia tool application enables you to save SensorCore sensor data to be used with the simulator later on..
+        ///   Looks up a localized string similar to This is an utility application, which enables you to save SensorCore sensor data to be used with the simulator later on..
         /// </summary>
         public static string AboutPage_AboutRun {
             get {
@@ -70,7 +70,7 @@ namespace record.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://www.github.com/nokia-developer/.
+        ///   Looks up a localized string similar to http://www.github.com/Microsoft/.
         /// </summary>
         public static string AboutPage_Hyperlink_Project {
             get {

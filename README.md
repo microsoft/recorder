@@ -3,7 +3,7 @@ Recorder
 
 SensorCore SDK sample data recorder for the simulator classes.
 
-For more information on implementation, visit Nokia Lumia Developer's Library: 
+For more information on implementation, visit Developer's Library: 
 http://developer.nokia.com/resources/library/Lumia/sensorcore-sdk/samples.html
 http://developer.nokia.com/resources/library/Lumia/sensorcore-sdk/recording-and-simulating.html
 
@@ -62,7 +62,7 @@ file the capabilities required for it to work:
 --------------------------------------------------------------------------------
 
 See the license text file delivered with this project. The license file is also
-available online at https://github.com/nokia-developer/recorder/blob/master/License.txt
+available online at https://github.com/Microsoft/recorder/blob/master/License.txt
 
 
 4. Version history
@@ -75,7 +75,7 @@ available online at https://github.com/nokia-developer/recorder/blob/master/Lice
 
 | Project | Release | Download |
 | ------- | --------| -------- |
-| Recorder | v1.0 | [recorder-1.0.zip](https://github.com/nokia-developer/recorder/archive/v1.0.zip) |
+| Recorder | v1.0 | [recorder-1.0.zip](https://github.com/Microsoft/recorder/archive/v1.0.zip) |
 
 
 6. See also
@@ -83,8 +83,8 @@ available online at https://github.com/nokia-developer/recorder/blob/master/Lice
 
 The projects listed below are exemplifying the usage of the SensorCore APIs
 
-* Steps -  https://github.com/nokia-developer/steps
-* Places - https://github.com/nokia-developer/places
-* Tracks - https://github.com/nokia-developer/tracks
-* Activities - https://github.com/nokia-developer/activities
+* Steps -  https://github.com/Microsoft/steps
+* Places - https://github.com/Microsoft/places
+* Tracks - https://github.com/Microsoft/tracks
+* Activities - https://github.com/Microsoft/activities
 

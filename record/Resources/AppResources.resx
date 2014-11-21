@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutPage_AboutRun" xml:space="preserve">
-    <value>This is a Nokia tool application enables you to save SensorCore sensor data to be used with the simulator later on.</value>
+    <value>This is an utility application, which enables you to save SensorCore sensor data to be used with the simulator later on.</value>
   </data>
   <data name="AboutPage_Hyperlink_Project" xml:space="preserve">
-    <value>http://www.github.com/nokia-developer/</value>
+    <value>http://www.github.com/Microsoft/</value>
   </data>
   <data name="AboutPage_ProjectRun" xml:space="preserve">
     <value>For more information and application source code go to {0}.</value>
