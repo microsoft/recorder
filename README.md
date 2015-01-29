@@ -3,9 +3,6 @@ Recorder
 
 SensorCore SDK sample data recorder for the simulator classes.
 
-For more information on implementation, visit Developer's Library: 
-http://developer.nokia.com/resources/library/Lumia/sensorcore-sdk/samples.html
-http://developer.nokia.com/resources/library/Lumia/sensorcore-sdk/recording-and-simulating.html
 
 1. Instructions
 --------------------------------------------------------------------------------
