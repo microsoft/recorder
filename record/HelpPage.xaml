@@ -12,19 +12,16 @@
     SupportedOrientations="Portrait" Orientation="Portrait"
     mc:Ignorable="d"
     shell:SystemTray.IsVisible="True">
-
     <Grid x:Name="LayoutRoot">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-
         <!-- TitlePanel -->
         <StackPanel Grid.Row="0" Margin="24,17,0,28">
             <TextBlock Text="{Binding Path=LocalizedResources.Application_Title, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextNormalStyle}" />
             <TextBlock Text="{Binding Path=LocalizedResources.HelpPage_Title, Source={StaticResource LocalizedStrings}}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
-
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <RichTextBox VerticalAlignment="Top">
                 <Paragraph x:Name="VersionParagraph"/>

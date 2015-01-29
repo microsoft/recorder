@@ -12,7 +12,6 @@
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
     shell:SystemTray.IsVisible="True">
-
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="#00ABA9">
         <Grid.RowDefinitions>
@@ -53,14 +52,11 @@
     </Grid>
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar Mode="Minimized" Opacity="1.0" IsMenuEnabled="True" IsVisible="True">
-
             <shell:ApplicationBar.MenuItems>
                 <shell:ApplicationBarMenuItem Text="about" Click="OnAboutClicked"  />
                 <shell:ApplicationBarMenuItem Text="reset" Click="OnResetClicked"  />
                 <shell:ApplicationBarMenuItem  Text="help" Click="OnHelpClicked"  />
             </shell:ApplicationBar.MenuItems>
-
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
-
 </phone:PhoneApplicationPage>

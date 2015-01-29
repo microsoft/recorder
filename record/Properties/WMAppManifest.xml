@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2014/deployment" AppPlatformVersion="8.1">
   <DefaultLanguage xmlns="" code="en-US" />
-  <App xmlns="" ProductID="{24fef266-03b8-4bfe-b1eb-9be52472ec20}" Title="record" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Microsoft Mobile" Description="Sample description" SDOptOut="false" BackUpOptOut="false" Publisher="record" PublisherID="{d617d6be-6d7e-482f-8324-0a2554b13f72}">
+  <App xmlns="" ProductID="{24fef266-03b8-4bfe-b1eb-9be52472ec20}" Title="record" RuntimeType="Silverlight" Version="1.0.0.1" Genre="apps.normal" Author="Microsoft Mobile" Description="Sample description" SDOptOut="false" BackUpOptOut="false" Publisher="record" PublisherID="{d617d6be-6d7e-482f-8324-0a2554b13f72}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />

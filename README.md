@@ -58,27 +58,22 @@ file the capabilities required for it to work:
     </m2:DeviceCapability>
 	
 	
-3. License
+3. Version history
 --------------------------------------------------------------------------------
 
-See the license text file delivered with this project. The license file is also
-available online at https://github.com/Microsoft/recorder/blob/master/License.txt
-
-
-4. Version history
---------------------------------------------------------------------------------
-
+* Version 1.0.0.1: Some bug fixes made in this release.
 * Version 1.0: The first release.
 
-5. Downloads
+4. Downloads
 ---------
 
 | Project | Release | Download |
 | ------- | --------| -------- |
+| Recorder | v1.0.0.1 | [recorder-1.0.0.1.zip](https://github.com/Microsoft/recorder/archive/v1.0.0.1.zip) |
 | Recorder | v1.0 | [recorder-1.0.zip](https://github.com/Microsoft/recorder/archive/v1.0.zip) |
 
 
-6. See also
+5. See also
 --------------------------------------------------------------------------------
 
 The projects listed below are exemplifying the usage of the SensorCore APIs
