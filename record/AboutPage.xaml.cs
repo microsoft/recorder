@@ -40,11 +40,8 @@ namespace record
         {
             InitializeComponent();
             // Application version number
-            var version = XDocument.Load("WMAppManifest.xml").Root.Element("App").Attribute("Version").Value;
-            var versionRun = new Run()
-            {
-                Text = String.Format(AppResources.AboutPage_VersionRun, version) + "\n"
-            };
+            var ver = Windows.ApplicationModel.Package.Current.Id.Version;
+            var versionRun = string.Format("{0}.{1}.{2}.{3}", ver.Major, ver.Minor, ver.Build, ver.Revision);
             VersionParagraph.Inlines.Add(versionRun);
             // Application about text
             var aboutRun = new Run()

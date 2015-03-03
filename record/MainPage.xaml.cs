@@ -315,13 +315,61 @@ namespace record
         }
 
         /// <summary>
+        /// Check motion data settings
+        /// </summary>
+        private async void CheckMotionDataSettings()
+        {
+            if (!(await TrackPointMonitor.IsSupportedAsync()) || !(await PlaceMonitor.IsSupportedAsync()) || !(await StepCounter.IsSupportedAsync()) || !(await ActivityMonitor.IsSupportedAsync()))
+            {
+                MessageBoxResult dlg = MessageBox.Show("Unfortunately this device does not support SensorCore service");
+                Application.Current.Terminate();
+            }
+            else
+            {
+                uint apiSet = await SenseHelper.GetSupportedApiSetAsync();
+                MotionDataSettings settings = await SenseHelper.GetSettingsAsync();
+                // Devices with old location settings
+                if (!settings.LocationEnabled)
+                {
+                    MessageBoxResult dlg = MessageBox.Show("In order to recognize activities and view visited places you need to enable location in system settings. Do you want to open settings now? if no, applicatoin will exit", "Information", MessageBoxButton.OKCancel);
+                    if (dlg == MessageBoxResult.OK)
+                        await SenseHelper.LaunchLocationSettingsAsync();
+                }
+                if (!settings.PlacesVisited)
+                {
+                    MessageBoxResult dlg = new MessageBoxResult();
+                    if (settings.Version < 2)
+                    {
+                        //device which has old motion data settings.
+                        //this is equal to motion data settings on/off in old system settings(SDK1.0 based)
+                        dlg = MessageBox.Show("In order to count steps you need to enable Motion data collection in Motion data settings. Do you want to open settings now?", "Information", MessageBoxButton.OKCancel);
+                        if (dlg == MessageBoxResult.Cancel)
+                            Application.Current.Terminate();
+                    }
+                    else
+                    {
+                        dlg = MessageBox.Show("In order to recognize activities you need to 'enable Places visited' and 'DataQuality to detailed' in Motion data settings. Do you want to open settings now? ", "Information", MessageBoxButton.OKCancel);
+                    }
+                    if (dlg == MessageBoxResult.OK)
+                        await SenseHelper.LaunchSenseSettingsAsync();
+                }
+                else if (apiSet >= 3 && settings.DataQuality == DataCollectionQuality.Basic)
+                {
+                    MessageBoxResult dlg = MessageBox.Show("In order to recognize biking activity you need to enable detailed data collection in Motion data settings. Do you want to open settings now?", "Information", MessageBoxButton.OKCancel);
+                    if (dlg == MessageBoxResult.OK)
+                        await SenseHelper.LaunchSenseSettingsAsync();
+                }
+            }
+        }
+
+        /// <summary>
         /// Initialize SensorCore 
         /// </summary>
         /// <param name="rec">Recording instance</param>
         /// <param name="type">Sense type</param>
         /// <returns>Asynchronous task</returns>
         private async Task HandleSensorActivity(Recording rec, SenseType type)
-        {
+        {           
             if (rec.Recorder == null)
             {
                 if (await CallSensorcoreApiAsync(async () =>
@@ -459,6 +507,7 @@ namespace record
             base.OnNavigatedTo(e);
             if (_recordingTimer != null && _recordingTimer.IsEnabled == false)
                 _recordingTimer.Start();
+            CheckMotionDataSettings();
         }
 
         /// <summary>
@@ -482,6 +531,6 @@ namespace record
             _placesRecording.Recorder = null;
             _stepsRecording.Recorder = null;
             _routeRecording.Recorder = null;
-        }       
+        }         
     }
 }

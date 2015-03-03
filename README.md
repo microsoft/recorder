@@ -57,7 +57,7 @@ file the capabilities required for it to work:
 	
 3. Version history
 --------------------------------------------------------------------------------
-
+* Version 1.1.0.3: Updated to use latest Lumia SensorCore SDK 1.1 Preview
 * Version 1.0.0.1: Some bug fixes made in this release.
 * Version 1.0: The first release.
 
@@ -66,6 +66,7 @@ file the capabilities required for it to work:
 
 | Project | Release | Download |
 | ------- | --------| -------- |
+| Recorder | v1.1.0.3 | [recorder-1.1.0.3.zip](https://github.com/Microsoft/recorder/archive/v1.1.0.3.zip) |
 | Recorder | v1.0.0.1 | [recorder-1.0.0.1.zip](https://github.com/Microsoft/recorder/archive/v1.0.0.1.zip) |
 | Recorder | v1.0 | [recorder-1.0.zip](https://github.com/Microsoft/recorder/archive/v1.0.zip) |
 
